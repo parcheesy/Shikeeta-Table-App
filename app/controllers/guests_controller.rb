@@ -4,7 +4,7 @@ class GuestsController < ApplicationController
   # GET /guests
   # GET /guests.json
   def index
-    @guests = Guest.where(firstname: params[:fullname])
+    @guests = Guest.search(params[:fullname])
 
   end
 

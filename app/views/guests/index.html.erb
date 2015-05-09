@@ -17,9 +17,9 @@
               <div class="col-sm-6 col-xs-12 text-center results">
                         <%if @guests.first%>
                         <h3><%= @guests.first.firstname + "," %></h3>
-                        <%end%>
                         <h3>Your Table Number Is:</h3>
-                        <h1 class="table_result"><%= @guests.first.table if @guests.first %></h1>
+                        <h1 class="table_result"><%= @guests.first.table %></h1>
+                        <%end%>
               </div>
       </div>
 </div>      
