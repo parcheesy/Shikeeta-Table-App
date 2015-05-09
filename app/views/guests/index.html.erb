@@ -11,11 +11,11 @@
               <div class="col-sm-6 col-xs-12 text-center"> 
                       <h3>Find Your Table</h3>
                       <form>
-                        <input type='text' id='name-form'  class='form-control' value='<%= params[:fullname] %>' name='fullname' placeholder="Enter Name" >
+                        <input type='text' id='name-form'  class='form-control' value='<%= params[:namesearch] %>' name='namesearch' placeholder="Enter Name" >
                       </form>
               </div>
               <div class="col-sm-6 col-xs-12 text-center results">
-                        <%if @guests.first%>
+                        <%if @guests%>
                         <h3><%= @guests.first.firstname + "," %></h3>
                         <h3>Your Table Number Is:</h3>
                         <h1 class="table_result"><%= @guests.first.table %></h1>
