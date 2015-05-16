@@ -1,10 +1,10 @@
 == Wedding Table App
 
-This app allows guests to look up their assigned tables by entering their names.<br>
+This app allows guests to look up their assigned tables by entering their names.\s\s
 Created for a friend's wedding.
 
-Ruby Version 2.1.1<br>
-Rails Version 4.1.1<br>
+Ruby Version 2.1.1\s\s
+Rails Version 4.1.1\s\s
 Uses Twitter typeahead.js 0.11.1 (https://github.com/twitter/typeahead.js/)
 
 
