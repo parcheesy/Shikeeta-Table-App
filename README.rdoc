@@ -2,8 +2,8 @@
 
 This app allows guests to look up their assigned tables by entering their names. Created for a friend's wedding.
 
-Ruby Version 2.1.1
-Rails Version 4.1.1
+Ruby Version 2.1.1/n
+Rails Version 4.1.1/n
 Uses Twitter typeahead.js 0.11.1 (https://github.com/twitter/typeahead.js/)
 
 
