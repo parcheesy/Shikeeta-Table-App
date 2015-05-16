@@ -1,0 +1,26 @@
+// Implement typeahead and bloodhound for guest search
+// Find documentation at https://github.com/twitter/typeahead.js/
+$(document).ready(function(){
+
+        // Assign all guest fullnames to an array
+        var guests = <%= Guest.all.map {|p| p.fullname.titleize } %>;
+        
+        var guests = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          local: guests
+        });
+         
+        $('#bloodhound .typeahead').typeahead({
+          hint: false,
+          highlight: true,
+          minLength: 1
+        },
+        {
+          name: 'guests',
+          source: guests
+        }).on('typeahead:selected', function(e, data) {
+                  $(form).submit();
+          });
+        
+});

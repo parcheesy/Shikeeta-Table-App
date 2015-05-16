@@ -1,0 +1,13 @@
+{
+  "name": "Shikeeta",
+  "version": "0.0.0",
+  "dependencies": {
+        "bootstrap": "~3.3.4",
+        "typeahead.js": "~0.11.1"
+  },
+  "authors": [
+    "Praveen Rudraraju <parcheesy@gmail.com>"
+  ],
+  "description": "Table Finder",
+  "license": "MIT"
+}
