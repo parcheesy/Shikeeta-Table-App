@@ -1,6 +1,6 @@
 Guest.destroy_all
 
-json = ActiveSupport::JSON.decode(File.read("../guest.json"))
+json = ActiveSupport::JSON.decode(File.read("db/guest.json"))
 
 Guest.create!(json)
 
