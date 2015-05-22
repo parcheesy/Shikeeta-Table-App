@@ -1,0 +1,9 @@
+<%if @guests%>
+        $('#guest_name').text("<%= @guests.first.fullname.titleize + ',' %>");
+        $('#guest_table').text("<%= @guests.first.table %>");
+        $('#name-form').val("");
+        $('.typeahead').typeahead('val', '');
+        if ($('.results').css('display') == 'none') {
+                $('.results').show();
+        }
+<%end%>
